@@ -1,0 +1,21 @@
+:root {
+  --tile-size: calc(390px / 3); /* Sync with SlotReel.vue! */
+  --padding: 12px;
+  --charcoal-rgb: 36, 36, 36;
+  --charcoal: rgb(var(--charcoal-rgb));
+  --color-chrome: var(--charcoal);
+
+  /* --color-chrome: rgb(0, 0, 0); */
+  --color-chrome-1: rgb(13 13 13);
+  --color-chrome-2: rgb(18 18 18);
+
+  /* --primary-rgb: 255 0 0; */
+  /* --primary-rgb: 255 0 187; */
+  --primary-rgb: 255 255 255;
+  --primary: rgb(var(--primary-rgb));
+
+  /* iPhone max width (Sync with SlotReel.vue) */
+  @media screen and (max-width: 428px) {
+    --tile-size: calc(100vw / 3);
+  }
+}

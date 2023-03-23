@@ -1,0 +1,13 @@
+{
+
+  "name": "Lex Slot Machine",
+  "short_name": "Slots by Lex",
+  "start_url": "https://lex.hofmeijer.me",
+  "display": "standalone",
+  "icons": [{
+    "src": "/white-screen-icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+
+}
