@@ -111,6 +111,7 @@ export default defineComponent({
         return
       }
       this.setWasLocked(false)
+      this.setWasThreeInRow(false)
 
       if (this.credits > 0 && !this.isSpinning) {
         this.playSound(Sounds.spin)
@@ -158,7 +159,6 @@ export default defineComponent({
         this.win += v1.value
         this.setWasThreeInRow(true) // prevent lock after an unlocked win
       } else {
-        this.setWasThreeInRow(false)
         const cash1 = v1.name === 'Cash'
         const cash2 = v2.name === 'Cash'
         const cash3 = v3.name === 'Cash'
